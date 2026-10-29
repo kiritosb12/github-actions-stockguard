@@ -15,3 +15,7 @@ Clasifica el riesgo de inventario de un producto según el stock actual y el sto
 python -m pip install -r requirements.txt
 pytest -v
 ```
+
+## Regla adicional: sobrestock
+`detectar_sobrestock(stock_actual, stock_maximo)` devuelve `True` cuando hay más unidades que la capacidad máxima
+(`stock_actual > stock_maximo`). En el límite exacto no hay sobrestock; valores negativos o un máximo ≤ 0 son inválidos.
